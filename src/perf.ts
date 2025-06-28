@@ -1,3 +1,5 @@
+import { JSONStringify } from "json-with-bigint";
+
 /**
  * 防抖
  * @param func 需要防抖的函数
@@ -23,7 +25,7 @@ export const debounce = <TArgs extends unknown[], TResult>(
 export const memoize = <TArgs extends unknown[], TResult>(fn: (...args: TArgs) => TResult) => {
     const cache = new Map<string, TResult>();
     return (...args: TArgs) => {
-        const key = JSON.stringify(args);
+        const key = JSONStringify(args);
         if (!cache.get(key)) cache.set(key, fn(...args));
         return cache.get(key) as ReturnType<typeof fn>;
     };

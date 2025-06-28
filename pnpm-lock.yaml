@@ -23,6 +23,9 @@ importers:
       '@noble/hashes':
         specifier: ^1.8.0
         version: 1.8.0
+      json-with-bigint:
+        specifier: ^3.4.4
+        version: 3.4.4
       vue:
         specifier: ^3.5.15
         version: 3.5.15(typescript@5.8.3)
@@ -116,6 +119,9 @@ packages:
 
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+
+  json-with-bigint@3.4.4:
+    resolution: {integrity: sha512-AhpYAAaZsPjU7smaBomDt1SOQshi9rEm6BlTbfVwsG1vNmeHKtEedJi62sHZzJTyKNtwzmNnrsd55kjwJ7054A==}
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -244,6 +250,8 @@ snapshots:
   entities@4.5.0: {}
 
   estree-walker@2.0.2: {}
+
+  json-with-bigint@3.4.4: {}
 
   magic-string@0.30.17:
     dependencies:
