@@ -13,7 +13,7 @@ export const unixNow = () => {
  * @returns 格式化后的日期字符串
  */
 export const formatDate = (date: Date | number, format: string) => {
-    const fnDate = typeof date === "number" ? new Date(date) : date; 
+    const fnDate = typeof date === "number" ? new Date(date * 1000) : date; 
     return format.replace(/yyyy|MM|dd|HH|mm|ss/g, (match) => {
         switch (match) {
             case "yyyy":
