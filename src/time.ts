@@ -19,15 +19,15 @@ export const formatDate = (date: Date | number, format: string) => {
             case "yyyy":
                 return fnDate.getFullYear().toString();
             case "MM":
-                return (fnDate.getMonth() + 1).toString();
+                return (fnDate.getMonth() + 1).toString().padStart(2, "0");
             case "dd":
-                return fnDate.getDate().toString();
+                return fnDate.getDate().toString().padStart(2, "0");
             case "HH":
-                return fnDate.getHours().toString();
+                return fnDate.getHours().toString().padStart(2, "0");
             case "mm":
-                return fnDate.getMinutes().toString();
+                return fnDate.getMinutes().toString().padStart(2, "0");
             case "ss":
-                return fnDate.getSeconds().toString();
+                return fnDate.getSeconds().toString().padStart(2, "0");
             default:
                 return "";
         }
