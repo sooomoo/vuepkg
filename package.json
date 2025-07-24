@@ -1,6 +1,6 @@
 {
   "name": "vuepkg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "此项目更新后，其他项目需要删除node_modules, lock file之后重新安装",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
